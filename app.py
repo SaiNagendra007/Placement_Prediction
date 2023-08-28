@@ -22,9 +22,9 @@ def result():
 
        print(ans)
        if int(ans)==0:
-           s='Not Eligible'
+           s='Not Placed'
        else:
-           s='Eligible'''
+           s='Placed'''
        return render_template('result.html',name=name, ans=s)
    
 
