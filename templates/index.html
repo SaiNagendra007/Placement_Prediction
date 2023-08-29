@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Placement Prediction</title>
+    
+    
+        <!-- BootStrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+
+    
+    
+    </head>
+<Body>
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/home"><b>Prediction</b></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          </div>
+        </div>
+      </nav>
+<figure class="text-center">
+    <blockquote class="blockquote">
+      <p>Identifying Patterns and Trends in Campus Placement Data using Machine Learning</p>
+    </blockquote>
+    
+  </figure>
+  <div class="container">
+
+
+<form action ="/result" method = "POST">
+    	<legend >Details:</legend>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" >Name of the Candidate</h5>
+                        <!-- Departure -->
+                        <input type="text" class="form-control" name="namec" id="namec" required="required">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" >Internships</h5>
+                        <!-- Arrival -->
+                        <input type="text" class="form-control"  name="Internships" id="Internships" required="required">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" >Age of the Candidate</h5>
+                        <!-- Departure -->
+                        <input type="text" class="form-control" name="Age" id="Age" required="required">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" >CGPA</h5>
+                        <!-- Arrival -->
+                        <input type="text" class="form-control"  name="CGPA" id="CGPA" required="required">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+  	
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" >Is Candidate in HOSTEL</h5>
+                        <!-- Departure -->
+                        <input type="text" placeholder="If stay's in hostel type 1 or type 0" class="form-control" name="hostel" id="hostel" required="required">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title" >History Of Backlogs</h5>
+                        <!-- Arrival -->
+                        <input type="text" class="form-control"  name="hob" id="hob" required="required">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title" >Is Candidate in HOSTEL</h5>
+                    
+                              <select name="branch" class="form-control"  required="required">
+                                <option value="Computer_Science">Computer Science</option>
+                                <option value="Electronics_And_Communication">Electronics And Communication</option>
+                                <option value="Information_Technology">Information Technology</option>
+                                <option value="Mechanical">Mechanical</option>
+                                <option value="Electrical">Electrical</option>
+                                <option value="Civil">Civil</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+               
+   
+            </div>
+           
+    <br>
+    <input type="submit" value="Predict" class="btn btn-outline-primary  btn-lg btn-block">
+    <p><br></p>
+  
+      </form>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"></script>
+
+</body>
+
+</html>
