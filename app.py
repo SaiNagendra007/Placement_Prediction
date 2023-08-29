@@ -25,7 +25,7 @@ def result():
            s='Not Placed'
        else:
            s='Placed'''
-       return render_template('result.html',name=name, ans=s)
+       return render_template('page1.html',name=name, ans=s)
    
 
 if __name__ == '__main__':
